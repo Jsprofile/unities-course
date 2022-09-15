@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="default.css">
+
+</head>
+
+<body>
+
+    <div class="coursesUnitiesSection container">
+        <div class="unitiesArea">
+            <button class="unity" data-unity="prime">prime</button>
+            <button class="unity">presencial</button>
+            <button class="unity">híbrido</button>
+            <button class="unity">ead</button>
+        </div>
+
+        <div class="coursePick">
+
+            <h3>Escolha seu curso</h3>
+
+            <div class="courses" data-unity="prime">
+                <div #swiperRef="" class="swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-course="adm">
+                            <img src="https://www.eniac.com.br/hubfs/thumb-administracao.png" alt="adm">
+                            <p>Administração</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.eniac.com.br/hubfs/thumb-administracao.png" alt="adm">
+                            <p>Administração</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.eniac.com.br/hubfs/thumb-administracao.png" alt="adm">
+                            <p>Administração</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.eniac.com.br/hubfs/thumb-administracao.png" alt="adm">
+                            <p>Administração</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.eniac.com.br/hubfs/thumb-administracao.png" alt="adm">
+                            <p>Administração</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://www.eniac.com.br/hubfs/thumb-administracao.png" alt="adm">
+                            <p>Administração</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+            <div class="courseDescription" data-course="adm">
+
+                <div class="left">
+                    <div class="title">
+                        <p>Bacharelado</p>
+                        <h4>Administração</h4>
+                    </div>
+
+                    <div class="description">
+                        <p>Quando formado você será capaz de atuar no desenvolvimento, implantação e manutenção de
+                            projetos em diversas áreas, da civil à industrial. Além de ser capaz de assinar qualquer
+                            tipo de obra, é uma responsabilidade e tanto. Por fazer Engenharia Elétrica no Eniac, você
+                            garante uma posição muito mais rápida no mercado de trabalho porque temos diversas parcerias
+                            com grandes empresas da região e as aulas são focadas na sua atuação profissional, sua
+                            experiência prática, será o seu diferencial. Quando se formar, vai poder trabalhar de forma
+                            autônoma ou como prestador de serviço, você que escolhe. Vai ser capaz de desenvolver
+                            projetos, automações e instalações industriais e residenciais podendo ganhar em média cerca
+                            de R$ 7.276,05. Outro ponto muito forte é que o Engenheiro Eletricista formado no Eniac,
+                            pode trabalhar fora do país, para empreiteiras, indústrias ou até mesmo prestando
+                            consultoria. Já deu para perceber que é uma área na qual não faltam oportunidades, não é?
+                        </p>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="" class="btn">Inscreva-se</a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="dif">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946785.png" alt="cap">
+                        <p>5 anos (10 semestres)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction"
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    });
+
+
+</script>
+
+</html>
